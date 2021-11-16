@@ -8,7 +8,7 @@ pipeline {
 
         stage('Build Maven') {
             steps{
-                 git branch: 'main', credentialsId: 'devopshint', url: 'https://github.com/devopshint/jenkins-nexus'
+                 git branch: 'main', credentialsId: 'pujaborse655', url: 'https://github.com/pujaborse655/jenkins-nexus'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
                 
             }
@@ -38,15 +38,15 @@ pipeline {
                             
                             protocol: 'http',
 
-                            nexusUrl: '52.66.46.76:8081/',
+                            nexusUrl: 'http://35.154.210.201:8081/',
 
                             groupId: 'pom.com.mycompany.app',
 
                             version: 'pom.1.0-SNAPSHOT',
 
-                            repository: 'repository/maven-central-repository',
+                            repository: 'repository/maven-central-repo',
 
-                            credentialsId: 'NEXUS_CRED',
+                            credentialsId: 'nexus',
 
                             artifacts: [
 
