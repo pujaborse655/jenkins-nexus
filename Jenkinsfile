@@ -8,7 +8,7 @@ pipeline {
 
         stage('Build Maven') {
             steps{
-                 git branch: 'main', credentialsId: 'pujaborse655', url: 'https://github.com/pujaborse655/jenkins-nexus'
+                 git branch: 'main', credentialsId: 'git', url: 'https://github.com/pujaborse655/jenkins-nexus'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
                 
             }
@@ -38,7 +38,7 @@ pipeline {
                             
                             protocol: 'http',
 
-                            nexusUrl: 'http://35.154.210.201:8081/',
+                            nexusUrl: 'http://13.233.98.144:8081/',
 
                             groupId: 'pom.com.mycompany.app',
 
