@@ -38,13 +38,13 @@ pipeline {
                             
                             protocol: 'http',
 
-                            nexusUrl: 'http://13.233.98.144:8081/',
+                            nexusUrl: '13.233.98.144:8081',
 
                             groupId: 'pom.com.mycompany.app',
 
                             version: 'pom.1.0-SNAPSHOT',
 
-                            repository: 'repository/maven-central-repo',
+                            repository: 'maven-central-repo',
 
                             credentialsId: 'nexus',
 
