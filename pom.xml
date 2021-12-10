@@ -38,7 +38,7 @@
               <repository>
                   <id>nexus</id>
                   <name>maven-central-repo</name>
-                  <url>http://3.90.147.21:8081/repository/maven-central-repo/</url>
+                  <url>http://3.87.157.15:8081/repository/maven-central-repo/</url>
               </repository>
             </distributionManagement>
 
