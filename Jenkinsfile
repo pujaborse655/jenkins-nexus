@@ -38,8 +38,7 @@ pipeline {
                             
                             protocol: 'http',
 
-                            nexusUrl: '3.87.157.15:8081',
-                        
+                            nexusUrl: '3.110.98.1:8081',
 
                             groupId: 'pom.com.mycompany.app',
 
